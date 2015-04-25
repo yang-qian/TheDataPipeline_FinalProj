@@ -1,0 +1,127 @@
+@font-face {
+	font-family: 'BrandonGrotesque';
+	font-weight: normal;
+	font-style: normal;
+	src: url("fonts/2C13D7_0_0.eot");
+	src: url("fonts/2C13D7_0_0.eot") format("embedded-opentype"), url("fonts/2C13D7_0_0.woff") format("woff"), url("fonts/2C13D7_0_0.ttf") format("truetype"), url("../img/2C13D7_0_0.svg") format("svg");
+}
+@font-face {
+	font-family: 'BrandonGrotesque';
+	font-weight: bold;
+	font-style: normal;
+	src: url("fonts/2C13D7_1_0.eot");
+	src: url("fonts/2C13D7_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2C13D7_1_0.woff") format("woff"), url("fonts/2C13D7_1_0.ttf") format("truetype"), url("../img/2C13D7_1_0.svg") format("svg");
+}
+html, body {
+	font-size: 11px;
+}
+body {
+	line-height: 2.4;
+	font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.23em;
+	text-transform: uppercase;
+}
+
+.chartTitle {
+	height: 30px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#example {
+	z-index:999;
+	height: 435px;
+	clear:left;
+}
+.parcoords > svg, .parcoords > canvas {
+	line-height: 2.4;
+	color: #000;
+	font-size: 10px;
+	font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.1em;
+	position: absolute;
+}
+.parcoords > canvas {
+	pointer-events: none;
+}
+.parcoords text.label {
+	cursor: default;
+	font-weight: bolder;
+}
+.parcoords rect.background {
+	fill: transparent;
+}
+.parcoords rect.background:hover {
+	fill: rgba(120,120,120,0.2);
+}
+.parcoords .resize rect {
+	fill: rgba(0,0,0,0.1);
+}
+.parcoords rect.extent {
+	fill: rgba(255,255,255,0.25);
+	stroke: rgba(0,0,0,0.6);
+}
+.parcoords .axis line, .parcoords .axis path {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+.parcoords canvas {
+	opacity: 1;
+	-moz-transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+}
+.parcoords canvas.faded {
+	opacity: 0.25;
+}
+.parcoords {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* data table styles */
+#grid {
+	height: 150px;
+	text-align:center;
+}
+.gridrow {
+	clear: left;
+	font-size: 10px;
+	height: 18px;
+}
+.gridrow:nth-child(odd) {
+	background: rgba(0,0,0,0.05);
+}
+.gridheader {
+	font-weight: bold;
+	font-size: 8px;
+	height: 30px;
+	letter-spacing: 0.2em;
+	line-height: 12px;
+	overflow:visible;
+	padding: 0px 0px 0px 0px;
+}
+.cell {
+	overflow: visible;
+	width:initial;
+	padding: 0px 0px 0px 0px;
+	height: 18px;
+}
+[class*="gridcol-"] {
+	width: 50px;
+	float:right;
+}
+.gridcol-0 {
+	min-width:320px;
+	float: left;
+}
+.gridcol-7 {
+	width:20px;
+}
+
+
